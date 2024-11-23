@@ -11,6 +11,12 @@ function displayMenuItems(menu) {
     const menuContainer = document.getElementById('menu')
 
     // Loop through each category and its items in the menu object
+    for (const category in menu) {
+        console.log(category);
+        for (const item of menu[category]) {
+            console.log(item);
+        }
+    }
     
 
         // Create an element to represent the category
