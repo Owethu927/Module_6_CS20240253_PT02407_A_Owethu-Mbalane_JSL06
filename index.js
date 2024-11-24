@@ -9,25 +9,18 @@ const menu = {
 function displayMenuItems(menu) {
     // Get the menu container element from the HTML
     const menuContainer = document.getElementById('menu')
-
     // Loop through each category and its items in the menu object
     for (const [category, item] of Object.entries(menu)) {
-
         // Create an element to represent the category
         const categoryElement = document.createElement('h3');
-
         // Set the text content of the category element to the category name
         categoryElement.textContent = category;
-
         // Append the category element to the menu container
         menuContainer.appendChild(categoryElement);
-
         // Create an element to represent a list of items
         const itemList = document.createElement("ul");
-
         // Append a list of items element to the menu container
         menuContainer.appendChild(itemList);
-
         // Loop through the items in the category and create list items
         item.forEach(item => {
             //Create a list element 
@@ -60,7 +53,6 @@ function addToOrder(itemName) {
     newTotal= currentTotal + itemPrice;
     // Update the text content of the order total element with the new total
     orderTotalElement.textContent= newTotal;
-    
 }
 
 // Function to initialize the menu system
