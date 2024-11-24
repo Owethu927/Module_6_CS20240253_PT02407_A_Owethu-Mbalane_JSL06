@@ -22,9 +22,10 @@ function displayMenuItems(menu) {
         const categoryElement = document.createElement("h2");
 
         // Set the text content of the category element to the category name
-        
+        categoryElement.textContent = category;
 
         // Append the category element to the menu container
+        menuContainer.appendChild(categoryElement);
 
         // Create an element to represent a list of items
 
