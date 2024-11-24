@@ -38,6 +38,10 @@ function displayMenuItems(menu) {
             const itemElement = document.createElement("li");
             //Set the text content of the list item element to the item name
             itemElement.textContent = item;
+            //Attach a click event listener to the list item to add it to the order 
+            itemElement.onclick = () => addToOrder(item);
+            //Append the list item to the items 
+            itemList.appendChild(itemElement);
         });
 
             // Create a list item element
