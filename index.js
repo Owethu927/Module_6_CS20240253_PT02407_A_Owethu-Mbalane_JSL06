@@ -27,12 +27,18 @@ function displayMenuItems(menu) {
         menuContainer.appendChild(categoryElement);
 
         // Create an element to represent a list of items
-        const itemList = document.createElement("ul")
+        const itemList = document.createElement("ul");
 
         // Append a list of items element to the menu container
         menuContainer.appendChild(itemList);
 
         // Loop through the items in the category and create list items
+        item.forEach(item => {
+            //Create a list element 
+            const itemElement = document.createElement("li");
+            //Set the text content of the list item element to the item name
+            itemElement.textContent = item;
+        });
 
             // Create a list item element
 
