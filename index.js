@@ -18,10 +18,11 @@ function displayMenuItems(menu) {
         }
     }
     
-
         // Create an element to represent the category
+        const categoryElement = document.createElement("h2");
 
         // Set the text content of the category element to the category name
+        
 
         // Append the category element to the menu container
 
