@@ -16,8 +16,7 @@ function displayMenuItems(menu) {
         for (const item of menu[category]) {
             console.log(item);
         }
-    }
-    
+
         // Create an element to represent the category
         const categoryElement = document.createElement("h2");
 
@@ -28,8 +27,10 @@ function displayMenuItems(menu) {
         menuContainer.appendChild(categoryElement);
 
         // Create an element to represent a list of items
+        const itemList = document.createElement("ul")
 
         // Append a list of items element to the menu container
+        menuContainer.appendChild(itemList);
 
         // Loop through the items in the category and create list items
 
@@ -40,6 +41,10 @@ function displayMenuItems(menu) {
             // Attach a click event listener to the list item to add it to the order
 
             // Append the list item to the list of items
+
+    }
+    
+        
 
             
 }
